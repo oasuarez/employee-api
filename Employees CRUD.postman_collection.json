@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "036aa26e-8561-486b-bc06-49583f2db462",
+		"name": "Employees CRUD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createEmployee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"name\": \"Michael Stone\",\r\n      \"office\": \"100A\",\r\n      \"email\" : \"michael.stone@oscorp.com\",\r\n      \"phone\" : \"415.331.3321\",\r\n      \"role\" : \"Teir 3 Support Engineer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createEmployeesList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"name\": \"Michael Stone\",\r\n        \"office\": \"321b\",\r\n        \"email\" : \"michael.stone@oscorp.com\",\r\n        \"phone\" : \"415.331.3321\",\r\n        \"role\" : \"Teir 3 Support Engineer\"\r\n    },\r\n    {\r\n        \"name\": \"Amber Johnson\",\r\n        \"office\": \"332c\",\r\n        \"email\" : \"amber.johnson@oscorp.com\",\r\n        \"phone\" : \"415.337.4345\",\r\n        \"role\" : \"Senior Project Manager\"\r\n    },\r\n    {\r\n        \"name\": \"Jung Wei-Li\",\r\n        \"office\": \"305a\",\r\n        \"email\" : \"jung.wei-li@oscorp.com\",\r\n        \"phone\" : \"415.221.8810\",\r\n        \"role\" : \"SEO Analyst\"\r\n    },\r\n    {\r\n        \"name\": \"Cliff Rosen\",\r\n        \"office\": \"361d\",\r\n        \"email\" : \"clifford.rosen@oscorp.com\",\r\n        \"phone\" : \"415.654.6010\",\r\n        \"role\" : \"Operations Analyst\"\r\n    },\r\n    {\r\n        \"name\": \"Maria Velasquez\",\r\n        \"office\": \"345d\",\r\n        \"email\" : \"maria.velasquez@oscorp.com\",\r\n        \"phone\" : \"415.541.9819\",\r\n        \"role\" : \"Senior Data Scientist\"\r\n    },\r\n    {\r\n        \"name\": \"Carol Dawson\",\r\n        \"office\": \"312A\",\r\n        \"email\" : \"carol.dawson@oscorp.com\",\r\n        \"phone\" : \"415.212.0045\",\r\n        \"role\" : \"Software Development Engineer II\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employees/list",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employees/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n      \"name\": \"Orlando Suarez2\",\r\n      \"office\": \"305a\",\r\n      \"email\" : \"orlando.suarez@unosquare.com\",\r\n      \"phone\" : \"317.341.7695\",\r\n      \"role\" : \"Developer\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/employees/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/employees/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/employees/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
