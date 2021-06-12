@@ -13,8 +13,8 @@ This project uses m2 database in memory, so you don't have to configure any DB o
 
 There are many ways to run a Spring Boot application on your local machine, you can use one of the following:
 
-- 1. Execute the `main` method in the `com.crud.employee.EmployeeApplication` class from your IDE, use the option 'Run as' --> 'Java Application' after use the option 'Run as' --> 'Maven install' to download the required dependencies defined in pom.xml.
-- 2. Use the cmd console with the command 'java -jar target\employee-0.0.1-SNAPSHOT.jar', so you need to be located in your console, inside the dir where you unzipped the project.
+- Execute the `main` method in the `com.crud.employee.EmployeeApplication` class from your IDE, use the option 'Run as' --> 'Java Application' after use the option 'Run as' --> 'Maven install' to download the required dependencies defined in pom.xml.
+- Use the cmd console with the command 'java -jar target\employee-0.0.1-SNAPSHOT.jar', so you need to be located in your console, inside the dir where you unzipped the project.
 
 Both of them are using an embedded TomcatWebServer
 
@@ -27,9 +27,9 @@ http://localhost:8080/swagger-ui.html#/employee-controller
 Also you can use another tool to send the different requests:
 
 - To create an employee (single employee)
-	method: POST
-	endpoint: localhost:8080/employees 
-	Sample Body (mandatory):
+	- method: POST
+	- endpoint: localhost:8080/employees 
+	- Sample Body (mandatory):
 		{
 		  "name": "Michael Stone",
 		  "office": "100A",
@@ -39,9 +39,9 @@ Also you can use another tool to send the different requests:
 		}
 		
 - To create many employees (one or more employees)
-	method: POST
-	endpoint: localhost:8080/employees/list 
-	Sample Body (mandatory):
+	- method: POST
+	- endpoint: localhost:8080/employees/list 
+	- Sample Body (mandatory):
 		[
 			{
 				"name": "Michael Stone",
@@ -60,17 +60,17 @@ Also you can use another tool to send the different requests:
 		]
 		
 - To retrieve all employees
-	method: GET
-	endpoint: localhost:8080/employees 
+	- method: GET
+	- endpoint: localhost:8080/employees 
 
 - To retrieve an employee by id
-	method: GET
-	endpoint: localhost:8080/employees/{employee_id}
+	- method: GET
+	- endpoint: localhost:8080/employees/{employee_id}
 
 - To update an employee
-	method: PUT
-	endpoint: localhost:8080/employees/{employee_id}
-	Sample Body (mandatory):
+	- method: PUT
+	- endpoint: localhost:8080/employees/{employee_id}
+	- Sample Body (mandatory):
 		{
 		  "name": "Orlando Suarez2",
 		  "office": "305a",
@@ -80,5 +80,5 @@ Also you can use another tool to send the different requests:
 		}
 
 - To delete an employee
-	method: DELETE
-	endpoint: localhost:8080/employees/{employee_id}
+	- method: DELETE
+	- endpoint: localhost:8080/employees/{employee_id}
