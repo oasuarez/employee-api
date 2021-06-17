@@ -7,7 +7,6 @@ For building and running the application you need:
 - [JDK 1.8]
 - [Maven 3]
 
-prueba
 This project uses m2 database in memory, so you don't have to configure any DB or run additional scripts.
 
 ## Run the application in local
